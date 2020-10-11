@@ -29,14 +29,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+  You need to extend the class component from React.Component. You then need to add the constructor function, where you then includer the super method and initialize your state. You then need to use the render method and inside you inclide your JSX to render for that component.
 
 2. Describe the different phases of the component lifecycle.
+  The lifestyle phases of React are the Mounting, updating, and then unmounting phase. The mounting phase is where the component is first rendered. The updating is where any changes to the state requires the component to be re-rendered occur. Lastly the unmounting phase is where any cleanup happens and the component is unmounted.
 
 3. Demonstrate an understanding of class component lifecycle methods.
+  The common lifecycle methods of the lifestyle phases include componentDidMount, which is used to set a components state after its first rendered. componentDidUpdate takes props used to determine if the state has changed since the last re-render. This is used for things like making a request to an API, where data returned may be asynchronous. componentWillUnmount is used to cleanup the component before it is unmounted. For instance you would use this to remove any event listeners.
 
 4. Define stateful logic.
+  Stateful logic is any logic in the component that updates or modifies the components state.
 
 5. Describe how to test a React component with React Testing Library.
+  Similar to other testing libraries you still arrange, act, and assert to identify what you're testing, do a thing, and then assert that that thing is behaving in the expected way.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
