@@ -69,11 +69,11 @@ const CheckoutForm = (props) => {
           <p>Your new green friends will be shipped to:</p>
           <br />
           <br />
-          <p>
+          <p data-testid="formDetails">
             {values.firstName} {values.lastName}
           </p>
-          <p>{values.address}</p>
-          <p>
+          <p data-testid="formDetails">{values.address}</p>
+          <p data-testid="formDetails">
             {values.city}, {values.state} {values.zip}
           </p>
         </div>
